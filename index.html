@@ -1,4 +1,4 @@
-<!DOCTYPE <html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,14 +27,64 @@
         <main class="grid">
             <div id="home">
                 <section id="home-msg">
-                    <img id="home-img" src="images/WhatsApp Image 2019-02-21 at 10.31.16 PM (3).jpeg" alt="Blue Island">
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="images/san-andres-isla.jpeg" alt = 'San Andres' style="width:100%">
+                            <div class="text">San Andres</div>
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="images/johnny-cay.jpg" alt = 'San Andres' style="width:100%">
+                            <div class="text">Johnny Cay</div>
+                        </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="images/San_Andres_Colombia4.jpg" alt = 'San Andres' style="width:100%">
+                            <div class="text">Sun</div>
+                        </div>
+
+                    </div>
+                    
+
+                    <div style="text-align:center">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+
+                    <script>
+                        let slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > slides.length) { slideIndex = 1 }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                            setTimeout(showSlides, 2000); // Change image every 2 seconds
+                        }
+                    </script>
                     <h5 class="home-text">
                         Located in the most beautiful beach in San Andres, Blue Island Resort ensures a magic
                         experience in this paradisiac Colombian island. Blue Island is the favorite spot for
                         tourists to enjoy the sun and the transparency of its multicolored waters.
-                        The beache of San Andres is unique, with crystal clear waters, white sands and shadows cast by
+                        The beache of San Andres is unique, with crystal clear waters, white sands and shadows cast
+                        by
                         coconut
-                        trees adorn the landscape which invites the visitor to come back to this destination of sun and
+                        trees adorn the landscape which invites the visitor to come back to this destination of sun
+                        and
                         beach.
                     </h5>
                 </section>
@@ -44,6 +94,8 @@
 
     <footer>
         <p>Blue Island &copy;2022 - by Luis Mendoza</p>
+        <a href="contactus.html">Contact Us</a>
+        <a href="site-plan.html">Site Plan</a>
         <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="fb icon">
