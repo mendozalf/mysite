@@ -29,6 +29,7 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 .mySlides {
     display: none;
 }
@@ -137,4 +138,44 @@ footer .social img {
     .text {
         font-size: 11px
     }
+}
+
+h3 {
+    color: #26354c;
+    text-align: center;
+}
+
+h2 {
+    color: #fe9d62;
+    text-align: center;
+}
+
+h4 {
+    color: #26354c;
+    text-align: center;
+    font-size: 1em;
+}
+
+div img {
+    border: 10px solid #26354c;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
