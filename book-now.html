@@ -18,7 +18,7 @@
             border-radius: 1em;
             grid-column: 3/9;
             background-color: #26354c;
-            color:#fe9d62;
+            color: #fe9d62;
         }
 
         ul {
@@ -109,65 +109,59 @@
                 <a href="book-now.html">Book Now</a>
             </nav>
         </header>
-        <main class="book-grid">
-            <div id="book">
-                <section id="book-msg">
-                        <section class="rooms-card">
-                        <img class="rooms-img" src="images/rooms.jpg" alt="Rooms">
-                        <h2>ROOMS
-                            The resort has 20 rooms, divided into King Standard and Twin Standard
-                            categories, with a capacity of 3 people per room and furnished with two
-                            doubles or one king size bed and a sofa bed.
-
-                            Each room is equipped with:
-
-                            Air conditioning
-                            Cable TV
-                            Hair dryer
-                            Hot shower
-                            Phone
-                            In-room safe
-                            Wifi
-                            Terrace or Balcony
-                            Amenities: soap, shampoo, conditioner, hand cream and shower cap
-                            Operator Wake-up service</h2>
-                    </section>
-                    <section class="Restaurant">
-                        <img class="restaurant-img" src="images/breakfast.jpg" alt="Restaurant">
-                        <h2>Restaurant
-                            Restaurant 'Rasta', buffet style and open four times:
-                            breakfast from 7:00 a.m. to 10:30 a.m.
-                            Lunch from 12:00 noon to 2:30 p.m.
-                            Snacks from 3:00 to 5:00 a.m.
-                        </h2>
-                    </section>
-                    <section class="calendar-card">
-                        <img class="calendar-img" src="images/calendar.jpg" alt="Calendar">
-                        <div id="feedback"></div>
-                        <form action="/my-handling-form-page" method="post">
-                            <ul>
-                                <li>
-                                    <label for="name">Check-in Date:</label>
-                                    <input type="text" id="name" name="user_name" />
-                                </li>
-                                <li>
-                                    <label for="mail">Check-out Date:</label>
-                                    <input type="email" id="mail" name="user_email" />
-                                </li>
-                                <li>
-                                    <label for="msg">Adults - Children - Rooms:</label>
-                                    <textarea id="msg" name="user_message"></textarea>
-                                    <input type="text" value="by default this element is filled with this text" />
-                                <li class="button">
-                                    <button type="submit">Send your message</button>
-                                </li>
-                                </li>
-                            </ul>
-                        </form>
-                    </section>
+        <div class="row">
+            <div class="column" style="background-color:#26354c;">
+                <h2>Rooms</h2>
+                <img src="images/rooms.jpg" alt='San Andres' style="width:100%">
+                <h4>The resort has 20 rooms, divided into King Standard and Twin Standard
+                    categories, with a capacity of 3 people per room and furnished with two
+                    doubles or one king size bed and a sofa bed.
+                    Each room is equipped with:
+                    Air conditioning
+                    Cable TV
+                    Hair dryer
+                    Hot shower
+                    Phone
+                    In-room safe
+                    Wifi
+                    Terrace or Balcony
+                    Amenities: soap, shampoo, conditioner, hand cream and shower cap
+                    Operator Wake-up service</h4>
             </div>
-        </main>
-    </div>
+            <div class="column" style="background-color:#26354c;">
+                <h2>Calendar</h2>
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Check-in Date:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">Check-out Date:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Adults - Children - Rooms:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                            <input type="text" value="by default this element is filled with this text" />
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="column" style="background-color:#26354c;">
+                <h2>City Tour</h2>
+                <img src="images/breakfast1.jpg" alt='San Andres' style="width:100%">
+                <h4>Restaurant 'Rasta', buffet style and open four times:
+                    breakfast from 7:00 a.m. to 10:30 a.m.
+                    Lunch from 12:00 noon to 2:30 p.m.
+                    Snacks from 3:00 to 5:00 a.m.</h4>
+            </div>
+           
+        </div>
+   </div>
 
     <footer>
         <p>Blue Island &copy;2022 - by Luis Mendoza</p>
