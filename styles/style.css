@@ -12,7 +12,6 @@ header {
 }
 
 #content {
-    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -146,14 +145,23 @@ h3 {
 }
 
 h2 {
-    color: #26354c;
+    color: #fe9d62;
     text-align: center;
+    background-color: #26354c;
 }
 
 h4 {
-    color: #26354c;
+    color: white;
     text-align: center;
     font-size: 1em;
+}
+
+h6 {
+    color: #26354c;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.3em;
+    line-height: 1em;
 }
 
 div img {
@@ -178,11 +186,6 @@ div img {
     clear: both;
 }
 
-.main {
-    display: grid;
-    grid-template-columns: repeat(1fr)
-}
-
 .rooms {
     grid-column: 2/4;
     grid-row: 2/3;
@@ -201,6 +204,13 @@ div img {
 .column {
     background-color: #4dc9ea;
 }
+
 nav a:hover {
     background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%
+    }
 }

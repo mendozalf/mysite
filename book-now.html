@@ -1,4 +1,4 @@
-<!DOCTYPE <html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,16 +10,18 @@
     <style>
         form {
             /* Center the form on the page */
-            margin: 0 auto;
+            margin: auto;
             width: 400px;
             /* Form outline */
-            padding: 1em;
+            padding: .5em;
             border: 1px solid #ccc;
             border-radius: 1em;
             grid-column: 3/9;
             background-color: #26354c;
             color: #fe9d62;
-        }
+            text-align: center;
+            margin-top: 3em;
+            }
 
         ul {
             list-style: none;
@@ -113,7 +115,7 @@
             <div class="column">
                 <h2>Rooms</h2>
                 <img src="images/rooms.jpg" alt='San Andres' style="width:100%">
-                <h4>The resort has 20 rooms, divided into King Standard and Twin Standard
+                <h6>The resort has 20 rooms, divided into King Standard and Twin Standard
                     categories, with a capacity of 3 people per room and furnished with two
                     doubles or one king size bed and a sofa bed.
                     Each room is equipped with:
@@ -126,27 +128,27 @@
                     Wifi
                     Terrace or Balcony
                     Amenities: soap, shampoo, conditioner, hand cream and shower cap
-                    Operator Wake-up service</h4>
+                    Operator Wake-up service</h6>
             </div>
             <div class="column">
                 <h2>Calendar</h2>
+                <img src="images/calen.jpg" alt='San Andres' style="width:100%">
                 <form action="/my-handling-form-page" method="post">
                     <ul>
                         <li>
                             <label for="name">Check-in Date:</label>
-                            <input type="text" id="name" name="user_name" />
+                            <input type="text" id="name" name="user_name">
                         </li>
                         <li>
                             <label for="mail">Check-out Date:</label>
-                            <input type="email" id="mail" name="user_email" />
+                            <input type="email" id="mail" name="user_email">
                         </li>
                         <li>
                             <label for="msg">Adults - Children - Rooms:</label>
                             <textarea id="msg" name="user_message"></textarea>
-                            <input type="text" value="by default this element is filled with this text" />
+                            <input type="text" value="by default this element is filled with this text">
                         <li class="button">
                             <button type="submit">Send your message</button>
-                        </li>
                         </li>
                     </ul>
                 </form>
@@ -154,14 +156,14 @@
             <div class="column">
                 <h2>City Tour</h2>
                 <img src="images/breakfast1.jpg" alt='San Andres' style="width:100%">
-                <h4>Restaurant 'Rasta', buffet style and open four times:
-                    breakfast from 7:00 a.m. to 10:30 a.m.
-                    Lunch from 12:00 noon to 2:30 p.m.
-                    Snacks from 3:00 to 5:00 a.m.</h4>
+                <h6>Restaurant 'Rasta', buffet style open four times:
+                 breakfast from 7:00 a.m. to 10:30 a.m. </h6>     
+                <h6>Lunch from 12:00 noon to 2:30 p.m.
+                 Snacks from 3:00 to 5:00 a.m.</h6>
             </div>
-           
+
         </div>
-   </div>
+    </div>
 
     <footer>
         <p>Blue Island &copy;2022 - by Luis Mendoza</p>
