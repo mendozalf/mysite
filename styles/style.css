@@ -116,7 +116,7 @@ h5 {
 footer {
     font-size: 1.5em;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 10px;
     background-color: #26354c;
     display: flex;
     justify-content: space-around;
@@ -146,7 +146,7 @@ h3 {
 }
 
 h2 {
-    color: #fe9d62;
+    color: #26354c;
     text-align: center;
 }
 
@@ -169,6 +169,7 @@ div img {
     width: 33.33%;
     padding: 10px;
     height: 300px;
+    display: inline-table;
 }
 
 .row:after {
@@ -195,4 +196,11 @@ div img {
 .calendar {
     grid-column: 8/10;
     grid-row: 2/3;
+}
+
+.column {
+    background-color: #4dc9ea;
+}
+nav a:hover {
+    background-color: white;
 }
